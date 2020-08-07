@@ -1,6 +1,8 @@
 const canvas = document.getElementById('canv');
 const ctx = canvas.getContext('2d');
 
+canvas.style.left="0px";
+
 const w = canvas.width = document.getElementById("header").clientWidth;
 const h = canvas.height = document.getElementById("header").clientHeight;
 const cols = Math.floor(w / 20) + 1;
@@ -10,7 +12,7 @@ ctx.fillStyle = '#000';
 ctx.fillRect(0, 0, w, h);
 
 function matrix () {
-  ctx.fillStyle = '#0001';
+  ctx.fillStyle = '#0011';
   ctx.fillRect(0, 0, w, h);
 
   ctx.fillStyle = '#0f0';
@@ -23,8 +25,8 @@ function matrix () {
     if (y > 100 + Math.random() * 10000) ypos[ind] = 0;
     else ypos[ind] = y + 20;
   });
-}
 
   document.body.style.background = "url(" + canvas.toDataURL() + ")";
-setInterval(matrix, 80);
+}
+setInterval(matrix, 100);
 

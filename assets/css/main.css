@@ -167,13 +167,16 @@ input, select, textarea {
 	}
 
 	h5 {
-		font-size: 0.9em;
+		font-size: 1.25em;
 		line-height: 1.5em;
+    margin-bottom: 0.5em;
 	}
 
 	h6 {
-		font-size: 0.7em;
+		font-size: 1.1em;
 		line-height: 1.5em;
+    padding: 0;
+    margin: 0;
 	}
 
 	sub {
@@ -2608,7 +2611,7 @@ input, select, textarea {
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: 35%;
+		width: 30%;
 	}
 
 		#header > * {
